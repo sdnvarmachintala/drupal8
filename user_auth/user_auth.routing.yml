@@ -1,0 +1,7 @@
+api.checkauth:
+  path: '/page_json/{apikey}/{nid}'
+  defaults:
+    _controller: '\Drupal\user_auth\Controller\ApiController::checkauth'
+    _title: 'ApiController'
+  requirements:
+    _permission: 'access content'
